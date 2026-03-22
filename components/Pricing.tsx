@@ -35,7 +35,7 @@ const tiers = [
   },
   {
     title: "آمادگی مصاحبه و بررسی رزومه",
-    price: "۲,۰۰۰,۰۰۰",
+    price: "۸,۰۰۰,۰۰۰",
     currency: "تومان",
     duration: "۱ ساعت",
     popular:false,

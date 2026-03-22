@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
 
         <h1 className="text-center text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight">
-          مسیر شغلی فناوری خود را <br />
+          مسیر شغلی خود را <br />
           <span className="bg-clip-text bg-gradient-to-r from-primary to-accent">
             با اطمینان هدایت کنید
           </span>
