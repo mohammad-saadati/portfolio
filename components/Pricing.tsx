@@ -9,6 +9,7 @@ const tiers = [
     price: "۱,۰۰۰,۰۰۰",
     currency: "تومان",
     duration: "۱ ساعت",
+    popular:false,
     audience: "دانشجویان و علاقه‌مندان",
     features: [
       "آشنایی با مسیرهای شغلی مختلف",
@@ -22,6 +23,7 @@ const tiers = [
     price: "۱,۵۰۰,۰۰۰",
     currency: "تومان",
     duration: "۱ ساعت",
+    popular:false,
     audience: "فارغ‌التحصیلان و تازه‌کاران",
     features: [
       "بررسی جامع رزومه و نمونه کارها",
@@ -36,6 +38,7 @@ const tiers = [
     price: "۲,۰۰۰,۰۰۰",
     currency: "تومان",
     duration: "۱ ساعت",
+    popular:false,
     audience: "متقاضیان استخدام",
     features: [
       "بررسی دقیق رزومه و تصحیح",
@@ -72,12 +75,12 @@ export default function Pricing() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
               className={`relative rounded-2xl p-8 border ${
-                tier.popular
+                tier?.popular
                   ? "bg-gradient-to-b from-zinc-900 to-zinc-950 border-primary"
                   : "bg-zinc-900 border-zinc-800"
               }`}
             >
-              {tier.popular && (
+              {tier?.popular && (
                 <span className="absolute top-0 left-4 -translate-y-1/2 bg-primary text-black text-xs font-bold px-3 py-1 rounded-full">
                   محبوب
                 </span>
